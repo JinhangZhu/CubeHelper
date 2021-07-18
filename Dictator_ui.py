@@ -302,7 +302,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Write Rubik\'s Cube Algorithms"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "CubeHelper: Help memorise Rubik\'s cube algorithms"))
         self.Result1.setText(_translate("MainWindow", "NA"))
         self.label.setText(_translate("MainWindow", "Result: "))
         self.Result2.setText(_translate("MainWindow", "NA"))

@@ -28,7 +28,7 @@ class MainPanel(Ui_MainWindow, QMainWindow):
         self.setupUi(self)
         self.logger = TimeLogger()
 
-        self.source_directory_path = "resource/cfop/f2l"
+        self.source_directory_path = "algorithms/cfop/f2l"
         self.source_item_paths = []
         self.chosen_item_paths = []
 
@@ -50,7 +50,7 @@ class MainPanel(Ui_MainWindow, QMainWindow):
     def setupSource(self):
         self.logger.info(msg="Start loading resources", start=True)
         self.source_item_paths = [p.replace('\\', '/') for p in sorted(glob(self.source_directory_path + '/*.png'))]
-        with open("resource/cfop/solution.json", 'r') as f:
+        with open("algorithms/cfop/solution.json", 'r') as f:
             self.solutions = json.load(f)["f2l"]
 
         for sip in self.source_item_paths:
